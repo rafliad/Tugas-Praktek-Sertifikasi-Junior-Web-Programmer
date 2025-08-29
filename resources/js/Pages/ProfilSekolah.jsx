@@ -1,10 +1,11 @@
+import { Card } from "@/Components/ui/card";
 import MainLayout from "@/Layouts/MainLayout";
 
 export default function ProfilSekolah() {
     return (
         <>
             <div className="container mx-auto py-12 px-6">
-                <div className="bg-white dark:bg-gray-800 rounded-lg shadow-xl p-8">
+                <Card className="bg-white dark:bg-gray-800 rounded-lg shadow-xl p-8">
                     <h1 className="text-4xl font-bold text-center mb-6">
                         Profil Sekolah Kami
                     </h1>
@@ -15,7 +16,7 @@ export default function ProfilSekolah() {
                         adipiscing elit. Sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua.
                     </p>
-                </div>
+                </Card>
             </div>
         </>
     );

@@ -2,12 +2,13 @@
 
 import { Head } from "@inertiajs/react";
 import MainLayout from "@/Layouts/MainLayout";
+import { Card } from "@/Components/ui/card";
 
 export default function TentangKami() {
     return (
         <>
             <div className="container mx-auto py-12 px-6">
-                <div className="max-w-4xl mx-auto bg-white dark:bg-gray-800 rounded-lg shadow-xl p-8">
+                <Card className="max-w-4xl mx-auto bg-white dark:bg-gray-800 rounded-lg shadow-xl p-8">
                     <h1 className="text-4xl font-bold text-center mb-8">
                         Tentang SMAN 5 Bandung
                     </h1>
@@ -184,7 +185,7 @@ export default function TentangKami() {
                             </li>
                         </ul>
                     </section>
-                </div>
+                </Card>
             </div>
         </>
     );

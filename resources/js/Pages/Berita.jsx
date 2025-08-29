@@ -1,5 +1,6 @@
 import { Head, Link } from "@inertiajs/react";
 import MainLayout from "@/Layouts/MainLayout";
+import { Card } from "@/Components/ui/card";
 
 export default function Berita({ daftarBerita }) {
     return (
@@ -11,7 +12,7 @@ export default function Berita({ daftarBerita }) {
 
                 <div className="space-y-6">
                     {daftarBerita.map((item) => (
-                        <div
+                        <Card
                             key={item.id}
                             className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6"
                         >
@@ -26,7 +27,7 @@ export default function Berita({ daftarBerita }) {
                             <p className="mt-4 text-gray-700 dark:text-gray-300">
                                 {item.ringkasan}
                             </p>
-                        </div>
+                        </Card>
                     ))}
                 </div>
             </div>
