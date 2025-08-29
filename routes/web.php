@@ -6,11 +6,14 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use App\Http\Controllers\ProfilSekolahController;
 use App\Http\Controllers\BeritaController;
+use App\Http\Controllers\KontakController;
 
 
 Route::get('/', [ProfilSekolahController::class, 'index'])->name('home');
-Route::get('/berita', [BeritaController::class, 'index'])->name('berita.index'); // Kita beri nama .index agar lebih spesifik
+Route::get('/berita', [BeritaController::class, 'index'])->name('berita.index');
 Route::get('/berita/{berita}', [BeritaController::class, 'show'])->name('berita.show');
+Route::get('/kontak', [KontakController::class, 'index'])->name('kontak');
+Route::post('/kontak', [KontakController::class, 'store'])->name('kontak.store');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
