@@ -4,16 +4,18 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Inertia\Inertia;
+use App\Models\Berita;
+use App\Models\Kegiatan;
 
-class ProfilSekolahController extends Controller
+class BerandaController extends Controller
 {
     public function index()
     {
-        // Kita akan kirimkan juga prop 'canLogin' dan 'canRegister'
-        // agar link Login/Register di pojok kanan atas tetap muncul.
-        return Inertia::render('ProfilSekolah', [
+        return Inertia::render('Beranda', [
             'canLogin' => \Illuminate\Support\Facades\Route::has('login'),
             'canRegister' => \Illuminate\Support\Facades\Route::has('register'),
+            'beritaTerbaru' => Berita::latest('tanggal')->take(3)->get(),
+            'kegiatanTerbaru' => Kegiatan::latest()->take(3)->get(),
         ]);
     }
 }
