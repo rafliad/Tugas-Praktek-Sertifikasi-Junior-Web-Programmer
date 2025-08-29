@@ -7,6 +7,7 @@ use Inertia\Inertia;
 use App\Http\Controllers\ProfilSekolahController;
 use App\Http\Controllers\BeritaController;
 use App\Http\Controllers\KontakController;
+use App\Http\Controllers\KegiatanController;
 
 
 Route::get('/', [ProfilSekolahController::class, 'index'])->name('home');
@@ -14,6 +15,7 @@ Route::get('/berita', [BeritaController::class, 'index'])->name('berita.index');
 Route::get('/berita/{berita}', [BeritaController::class, 'show'])->name('berita.show');
 Route::get('/kontak', [KontakController::class, 'index'])->name('kontak');
 Route::post('/kontak', [KontakController::class, 'store'])->name('kontak.store');
+Route::get('/kegiatan', [KegiatanController::class, 'index'])->name('kegiatan');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
