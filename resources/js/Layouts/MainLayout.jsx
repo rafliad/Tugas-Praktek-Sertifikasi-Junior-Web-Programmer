@@ -12,8 +12,11 @@ export default function MainLayout({ children, title }) {
                         SMAN 5 Bandung
                     </Link>
                     <div className="space-x-4">
-                        <Link href="/" className="hover:text-blue-500">
-                            Home
+                        <Link
+                            href="/tentang-kami"
+                            className="hover:text-blue-500"
+                        >
+                            Tentang Kami
                         </Link>
                         <Link href="/berita" className="hover:text-blue-500">
                             Berita

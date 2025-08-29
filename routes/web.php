@@ -8,6 +8,7 @@ use App\Http\Controllers\ProfilSekolahController;
 use App\Http\Controllers\BeritaController;
 use App\Http\Controllers\KontakController;
 use App\Http\Controllers\KegiatanController;
+use App\Http\Controllers\TentangKamiController;
 
 
 Route::get('/', [ProfilSekolahController::class, 'index'])->name('home');
@@ -16,6 +17,7 @@ Route::get('/berita/{berita}', [BeritaController::class, 'show'])->name('berita.
 Route::get('/kontak', [KontakController::class, 'index'])->name('kontak');
 Route::post('/kontak', [KontakController::class, 'store'])->name('kontak.store');
 Route::get('/kegiatan', [KegiatanController::class, 'index'])->name('kegiatan');
+Route::get('/tentang-kami', [TentangKamiController::class, 'index'])->name('tentang-kami');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
