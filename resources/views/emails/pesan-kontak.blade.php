@@ -21,8 +21,6 @@
         table {
             border-collapse: separate;
             table-layout: fixed;
-            mso-table-lspace: 0pt;
-            mso-table-rspace: 0pt
         }
 
         table td {
@@ -152,7 +150,6 @@
 
             .t102,
             .t97 {
-                mso-line-height-alt: 0px !important;
                 line-height: 0 !important;
                 display: none !important
             }
@@ -200,7 +197,7 @@
     <div class="t104" style="background-color:#FFFFFF;">
         <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" align="center">
             <tr>
-                <td class="t103" style="font-size:0;line-height:0;mso-line-height-rule:exactly;background-color:#FFFFFF;" valign="top" align="center">
+                <td class="t103" style="font-size:0;line-height:0;background-color:#FFFFFF;" valign="top" align="center">
                     <!--[if mso]>
 <v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false">
 <v:fill color="#FFFFFF"/>
@@ -209,7 +206,7 @@
                     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" align="center" id="innerTable">
                         <tr>
                             <td>
-                                <div class="t97" style="mso-line-height-rule:exactly;mso-line-height-alt:50px;line-height:50px;font-size:1px;display:block;">&nbsp;&nbsp;</div>
+                                <div class="t97" style="line-height:50px;font-size:1px;display:block;">&nbsp;&nbsp;</div>
                             </td>
                         </tr>
                         <tr>
@@ -240,7 +237,7 @@
                                                             </tr>
                                                             <tr>
                                                                 <td>
-                                                                    <div class="t5" style="mso-line-height-rule:exactly;mso-line-height-alt:42px;line-height:42px;font-size:1px;display:block;">&nbsp;&nbsp;</div>
+                                                                    <div class="t5" style="line-height:42px;font-size:1px;display:block;">&nbsp;&nbsp;</div>
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -251,7 +248,7 @@
                                                                                 <table class="t8" role="presentation" cellpadding="0" cellspacing="0" width="100%" style="width:100%;">
                                                                                     <tr>
                                                                                         <td class="t7" style="border-bottom:1.5px solid #EFF1F4;padding:0 0 18px 0;">
-                                                                                            <h1 class="t6" style="margin:0;Margin:0;font-family:Montserrat,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;line-height:28px;font-weight:700;font-style:normal;font-size:24px;text-decoration:none;text-transform:none;letter-spacing:-1px;direction:ltr;color:#141414;text-align:left;mso-line-height-rule:exactly;mso-text-raise:1px;">Pesan Baru</h1>
+                                                                                            <h1 class="t6" style="margin:0;Margin:0;font-family:Montserrat,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;line-height:28px;font-weight:700;font-style:normal;font-size:24px;text-decoration:none;text-transform:none;letter-spacing:-1px;direction:ltr;color:#141414;text-align:left;">Pesan Baru</h1>
                                                                                         </td>
                                                                                     </tr>
                                                                                 </table>
@@ -262,7 +259,7 @@
                                                             </tr>
                                                             <tr>
                                                                 <td>
-                                                                    <div class="t11" style="mso-line-height-rule:exactly;mso-line-height-alt:18px;line-height:18px;font-size:1px;display:block;">&nbsp;&nbsp;</div>
+                                                                    <div class="t11" style="line-height:18px;font-size:1px;display:block;">&nbsp;&nbsp;</div>
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -273,7 +270,7 @@
                                                                                 <table class="t14" role="presentation" cellpadding="0" cellspacing="0" width="100%" style="width:100%;">
                                                                                     <tr>
                                                                                         <td class="t13">
-                                                                                            <p class="t12" style="margin:0;Margin:0;font-family:Open Sans,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;line-height:25px;font-weight:400;font-style:normal;font-size:15px;text-decoration:none;text-transform:none;letter-spacing:-0.1px;direction:ltr;color:#141414;text-align:left;mso-line-height-rule:exactly;mso-text-raise:3px;">Anda telah menerima pesan baru dengan detail sebagai berikut:</p>
+                                                                                            <p class="t12" style="margin:0;Margin:0;font-family:Open Sans,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;line-height:25px;font-weight:400;font-style:normal;font-size:15px;text-decoration:none;text-transform:none;letter-spacing:-0.1px;direction:ltr;color:#141414;text-align:left;">Anda telah menerima pesan baru dengan detail sebagai berikut:</p>
                                                                                         </td>
                                                                                     </tr>
                                                                                 </table>
@@ -326,7 +323,7 @@
                                                                                                                                                                                                                             <table class="t19" role="presentation" cellpadding="0" cellspacing="0" width="100%" style="width:100%;">
                                                                                                                                                                                                                                 <tr>
                                                                                                                                                                                                                                     <td class="t18">
-                                                                                                                                                                                                                                        <p class="t17" style="margin:0;Margin:0;font-family:Inter Tight,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;line-height:22px;font-weight:700;font-style:normal;font-size:16px;text-decoration:none;text-transform:none;direction:ltr;color:#333333;text-align:left;mso-line-height-rule:exactly;mso-text-raise:2px;">Name</p>
+                                                                                                                                                                                                                                        <p class="t17" style="margin:0;Margin:0;font-family:Inter Tight,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;line-height:22px;font-weight:700;font-style:normal;font-size:16px;text-decoration:none;text-transform:none;direction:ltr;color:#333333;text-align:left;">Name</p>
                                                                                                                                                                                                                                     </td>
                                                                                                                                                                                                                                 </tr>
                                                                                                                                                                                                                             </table>
@@ -353,7 +350,7 @@
                                                                                                                                                                                                                             <table class="t27" role="presentation" cellpadding="0" cellspacing="0" width="100%" style="width:100%;">
                                                                                                                                                                                                                                 <tr>
                                                                                                                                                                                                                                     <td class="t26">
-                                                                                                                                                                                                                                        <p class="t25" style="margin:0;Margin:0;font-family:Inter Tight,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;line-height:22px;font-weight:400;font-style:normal;font-size:16px;text-decoration:none;text-transform:none;direction:ltr;color:#333333;text-align:left;mso-line-height-rule:exactly;mso-text-raise:2px;">{{ $data['nama'] }}</p>
+                                                                                                                                                                                                                                        <p class="t25" style="margin:0;Margin:0;font-family:Inter Tight,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;line-height:22px;font-weight:400;font-style:normal;font-size:16px;text-decoration:none;text-transform:none;direction:ltr;color:#333333;text-align:left;">{{ $data['nama'] }}</p>
                                                                                                                                                                                                                                     </td>
                                                                                                                                                                                                                                 </tr>
                                                                                                                                                                                                                             </table>
@@ -406,7 +403,7 @@
                                                                                                                                                                                                                             <table class="t43" role="presentation" cellpadding="0" cellspacing="0" width="100%" style="width:100%;">
                                                                                                                                                                                                                                 <tr>
                                                                                                                                                                                                                                     <td class="t42">
-                                                                                                                                                                                                                                        <p class="t41" style="margin:0;Margin:0;font-family:Inter Tight,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;line-height:22px;font-weight:700;font-style:normal;font-size:16px;text-decoration:none;text-transform:none;direction:ltr;color:#333333;text-align:left;mso-line-height-rule:exactly;mso-text-raise:2px;">Email</p>
+                                                                                                                                                                                                                                        <p class="t41" style="margin:0;Margin:0;font-family:Inter Tight,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;line-height:22px;font-weight:700;font-style:normal;font-size:16px;text-decoration:none;text-transform:none;direction:ltr;color:#333333;text-align:left;">Email</p>
                                                                                                                                                                                                                                     </td>
                                                                                                                                                                                                                                 </tr>
                                                                                                                                                                                                                             </table>
@@ -433,7 +430,7 @@
                                                                                                                                                                                                                             <table class="t51" role="presentation" cellpadding="0" cellspacing="0" width="100%" style="width:100%;">
                                                                                                                                                                                                                                 <tr>
                                                                                                                                                                                                                                     <td class="t50">
-                                                                                                                                                                                                                                        <p class="t49" style="margin:0;Margin:0;font-family:Inter Tight,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;line-height:22px;font-weight:400;font-style:normal;font-size:16px;text-decoration:none;text-transform:none;direction:ltr;color:#333333;text-align:left;mso-line-height-rule:exactly;mso-text-raise:2px;">{{ $data['email'] }}</p>
+                                                                                                                                                                                                                                        <p class="t49" style="margin:0;Margin:0;font-family:Inter Tight,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;line-height:22px;font-weight:400;font-style:normal;font-size:16px;text-decoration:none;text-transform:none;direction:ltr;color:#333333;text-align:left;">{{ $data['email'] }}</p>
                                                                                                                                                                                                                                     </td>
                                                                                                                                                                                                                                 </tr>
                                                                                                                                                                                                                             </table>
@@ -486,7 +483,7 @@
                                                                                                                                                                                                                             <table class="t67" role="presentation" cellpadding="0" cellspacing="0" width="100%" style="width:100%;">
                                                                                                                                                                                                                                 <tr>
                                                                                                                                                                                                                                     <td class="t66">
-                                                                                                                                                                                                                                        <p class="t65" style="margin:0;Margin:0;font-family:Inter Tight,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;line-height:22px;font-weight:700;font-style:normal;font-size:16px;text-decoration:none;text-transform:none;direction:ltr;color:#333333;text-align:left;mso-line-height-rule:exactly;mso-text-raise:2px;">Pesan</p>
+                                                                                                                                                                                                                                        <p class="t65" style="margin:0;Margin:0;font-family:Inter Tight,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;line-height:22px;font-weight:700;font-style:normal;font-size:16px;text-decoration:none;text-transform:none;direction:ltr;color:#333333;text-align:left;">Pesan</p>
                                                                                                                                                                                                                                     </td>
                                                                                                                                                                                                                                 </tr>
                                                                                                                                                                                                                             </table>
@@ -513,7 +510,7 @@
                                                                                                                                                                                                                             <table class="t75" role="presentation" cellpadding="0" cellspacing="0" width="100%" style="width:100%;">
                                                                                                                                                                                                                                 <tr>
                                                                                                                                                                                                                                     <td class="t74">
-                                                                                                                                                                                                                                        <p class="t73" style="margin:0;Margin:0;font-family:Inter Tight,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;line-height:22px;font-weight:400;font-style:normal;font-size:16px;text-decoration:none;text-transform:none;direction:ltr;color:#333333;text-align:left;mso-line-height-rule:exactly;mso-text-raise:2px;">{{ $data['pesan'] }}</p>
+                                                                                                                                                                                                                                        <p class="t73" style="margin:0;Margin:0;font-family:Inter Tight,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;line-height:22px;font-weight:400;font-style:normal;font-size:16px;text-decoration:none;text-transform:none;direction:ltr;color:#333333;text-align:left;">{{ $data['pesan'] }}</p>
                                                                                                                                                                                                                                     </td>
                                                                                                                                                                                                                                 </tr>
                                                                                                                                                                                                                             </table>
@@ -569,7 +566,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <div class="t102" style="mso-line-height-rule:exactly;mso-line-height-alt:50px;line-height:50px;font-size:1px;display:block;">&nbsp;&nbsp;</div>
+                                <div class="t102" style="line-height:50px;font-size:1px;display:block;">&nbsp;&nbsp;</div>
                             </td>
                         </tr>
                     </table>
