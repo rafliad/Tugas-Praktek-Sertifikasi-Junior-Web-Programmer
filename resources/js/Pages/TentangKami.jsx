@@ -38,7 +38,6 @@ export default function TentangKami() {
                                 ini digunakan sebagai ruang BP/BK, perpustakaan,
                                 dan ruang audio visual SMAN 5.
                             </p>
-                            <br />
                             <p>
                                 Selama masa pendudukan Jepang di Indonesia
                                 (1942-1945) dan masa mempertahankan kemerdekaan
@@ -49,7 +48,6 @@ export default function TentangKami() {
                                 A (sekarang SMAN 1) dan SMA B (sekarang SMAN 2,
                                 3, dan 4) serta SMA C menjadi SMAN 5.
                             </p>
-                            <br />
                             <p>
                                 Ketika jabatan kepala sekolah (dulu sebutannya
                                 Direktur) dipegang oleh Tan Kiem Hay dimulailah
@@ -61,7 +59,6 @@ export default function TentangKami() {
                                 Merdeka manakala Presiden Sukarno menerima tamu
                                 negara.
                             </p>
-                            <br />
                             <p>
                                 Seiring dengan bertambahnya jumlah siswa maka
                                 kemudian dibentuklah sekolah baru dan
@@ -75,7 +72,6 @@ export default function TentangKami() {
                                 tahun 2007 sampai sekarang masih berstatus
                                 R-SMA-BI.{" "}
                             </p>
-                            <br />
                             <p>
                                 Dan jurusan IPA dan IPS (kurikulum 1994). Dengan
                                 tuntutan kurikulum yang ada, maka secara
@@ -95,7 +91,6 @@ export default function TentangKami() {
                                 serta untuk pembinaan Kepramukaan di lingkungan
                                 SMA 5 bandung.
                             </p>
-                            <br />
                             <p>
                                 Pada tahun 1996 terjadilah perubahan
                                 nomenklatur, yang menyebabkan diubahnya dari SMA
@@ -109,7 +104,6 @@ export default function TentangKami() {
                                 walaupun ruang laboratorium dikorbankan juga
                                 sebagai ruangan kelas.
                             </p>
-                            <br />
                             <p>
                                 Pada masa inilah laboratorium Komputer
                                 diresmikan, termasuk pembangunan green house
@@ -118,7 +112,6 @@ export default function TentangKami() {
                                 shalat Jumat yang biasanya dilakukan di aula
                                 Belitung.
                             </p>
-                            <br />
                             <p>
                                 Kemudian pada tahun pelajaran 2004/2005 SMAN 5
                                 diberi kepercayaan oleh Dinas Pendidikan Kota
@@ -129,7 +122,6 @@ export default function TentangKami() {
                                 menjadi X untuk kelas 1, XI untuk kelas 2 dan
                                 XII untuk kelas 3.
                             </p>
-                            <br />
                             <p>
                                 Kurikulum Berbasis Kompetensi adalah merupakan
                                 seperangkat rencana dan pengaturan tentang
@@ -146,10 +138,12 @@ export default function TentangKami() {
                         <h2 className="text-2xl font-semibold border-b-2 border-blue-500 pb-2 mb-4">
                             Visi
                         </h2>
-                        <blockquote className="border-l-4 border-gray-400 pl-4 italic text-lg">
-                            Sekolah Unggul yang Berdaya Saing Tinggi, Berpijak
-                            pada Agama, Budaya, dan Iptek, serta berwawasan
-                            Lingkungan
+                        <blockquote class="text-xl italic font-semibold text-gray-900 dark:text-white">
+                            <p>
+                                Sekolah Unggul yang Berdaya Saing Tinggi,
+                                Berpijak pada Agama, Budaya, dan Iptek, serta
+                                berwawasan Lingkungan
+                            </p>
                         </blockquote>
                     </section>
 

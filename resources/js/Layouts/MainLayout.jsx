@@ -5,11 +5,20 @@ export default function MainLayout({ children, title }) {
         <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
             <Head
                 title={title ? `${title} - SMAN 5 Bandung` : "SMAN 5 Bandung"}
-            />
+            >
+                <link rel="icon" type="image/png" href="/favicon.png" />
+            </Head>
             <header className="bg-white dark:bg-gray-800 shadow-md">
                 <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
-                    <Link href="/" className="text-xl font-bold">
-                        SMAN 5 Bandung
+                    <Link href="/" className="flex items-center space-x-3">
+                        <img
+                            src="/logo.png"
+                            alt="Logo SMAN 5 Bandung"
+                            className="h-10"
+                        />
+                        <span className="text-xl font-bold">
+                            SMAN 5 Bandung
+                        </span>
                     </Link>
                     <div className="space-x-4">
                         <Link
