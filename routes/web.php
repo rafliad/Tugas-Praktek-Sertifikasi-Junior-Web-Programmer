@@ -9,7 +9,8 @@ use App\Http\Controllers\BeritaController;
 
 
 Route::get('/', [ProfilSekolahController::class, 'index'])->name('home');
-Route::get('/berita', [BeritaController::class, 'index'])->name('berita');
+Route::get('/berita', [BeritaController::class, 'index'])->name('berita.index'); // Kita beri nama .index agar lebih spesifik
+Route::get('/berita/{berita}', [BeritaController::class, 'show'])->name('berita.show');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');

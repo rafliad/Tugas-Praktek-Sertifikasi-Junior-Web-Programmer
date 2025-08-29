@@ -11,12 +11,16 @@ class BeritaController extends Controller
 {
     public function index()
     {
-        // 2. Ganti seluruh array "dummy" dengan satu baris ini
         $berita = Berita::latest('tanggal')->get();
-
-        // Baris di bawah ini tetap sama persis!
         return Inertia::render('Berita', [
             'daftarBerita' => $berita
+        ]);
+    }
+
+    public function show(Berita $berita)
+    {
+        return Inertia::render('BeritaDetail', [
+            'berita' => $berita
         ]);
     }
 }
