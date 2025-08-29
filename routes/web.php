@@ -5,8 +5,11 @@ use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use App\Http\Controllers\ProfilSekolahController;
+use App\Http\Controllers\BeritaController;
+
 
 Route::get('/', [ProfilSekolahController::class, 'index'])->name('home');
+Route::get('/berita', [BeritaController::class, 'index'])->name('berita');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
