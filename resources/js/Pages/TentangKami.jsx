@@ -142,10 +142,12 @@ export default function TentangKami() {
                                 <CardTitle className="text-2xl">Visi</CardTitle>
                             </CardHeader>
                             <CardContent>
-                                <blockquote className="border-l-4 border-gray-400 pl-4 italic text-lg">
-                                    "Sekolah Unggul yang Berdaya Saing Tinggi,
-                                    Berpijak pada Agama, Budaya, dan Iptek,
-                                    serta berwawasan Lingkungan"
+                                <blockquote class="text-xl italic font-semibold text-gray-900 dark:text-white">
+                                    <p>
+                                        "Sekolah Unggul yang Berdaya Saing
+                                        Tinggi, Berpijak pada Agama, Budaya, dan
+                                        Iptek, serta berwawasan Lingkungan"
+                                    </p>
                                 </blockquote>
                             </CardContent>
                         </Card>
