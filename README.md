@@ -1,61 +1,138 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# SMAN 5 Bandung School Website
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A modern and functional school website project built with a full-stack technology stack featuring Laravel and React. This project is designed to serve as the main information portal for students, parents, and prospective students, featuring a clean, responsive, and professional user interface.
 
-## About Laravel
+## Screenshot
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+![SMAN 5 Bandung Homepage Preview](screenshot.png)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Key Features
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+-   **Dynamic Homepage:** A landing page that showcases the 3 latest news articles and the 3 most recent activities from the database.
+-   **News System:** A complete, database-driven news feature with list and detail pages.
+-   **Activity Gallery:** A responsive photo gallery for school activities, laid out in a grid format.
+-   **Comprehensive Informative Pages:** A detailed "About Us" page (including History, Vision, and Mission) and a "Contact" page.
+-   **Functional Contact Form:** A contact form with robust backend validation (Laravel) and email notification capabilities (tested with Mailtrap).
+-   **Modern & Responsive Design:** A fully responsive layout, a sticky header, and a professional UI built with Shadcn UI.
+-   **Single-Page Application (SPA) Experience:** Instant navigation between pages with no browser refresh, powered by Inertia.js.
 
-## Learning Laravel
+## Tech Stack
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+This project was built using a modern ecosystem that seamlessly integrates a powerful backend with a dynamic frontend.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### Backend
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+-   **PHP 8.2+**
+-   **Laravel 11**
+-   **MySQL / MariaDB**
+-   **Eloquent ORM** (for database interaction)
+-   **Laravel Mail** (built on Symfony Mailer)
 
-## Laravel Sponsors
+### Frontend
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+-   **React.js 18**
+-   **Inertia.js** (as the "glue" between Laravel and React)
+-   **Vite** (for module bundling & HMR)
+-   **Tailwind CSS** (for utility-first styling)
+-   **Shadcn UI** (a collection of UI components built on Radix UI)
 
-### Premium Partners
+### Development Environment
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+-   **Composer** (PHP Package Manager)
+-   **Node.js & NPM** (JavaScript Package Manager)
+-   **Mailtrap** (for local email testing)
 
-## Contributing
+## Getting Started: Setup and Installation
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Follow these steps to run the project locally.
 
-## Code of Conduct
+1.  **Clone this repository:**
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+    ```bash
+    git clone https://github.com/rafliad/Tugas-Praktek-Sertifikasi-Junior-Web-Programmer.git
+    cd website-sekolah
+    ```
 
-## Security Vulnerabilities
+2.  **Install PHP dependencies:**
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+    ```bash
+    composer install
+    ```
+
+3.  **Install JavaScript dependencies:**
+
+    ```bash
+    npm install
+    ```
+
+4.  **Prepare the environment file:**
+    Copy the `.env.example` file to `.env`.
+
+    ```bash
+    cp .env.example .env
+    ```
+
+5.  **Generate the application key:**
+
+    ```bash
+    php artisan key:generate
+    ```
+
+6.  **Configure your `.env` file:**
+    Open the `.env` file and adjust the following variables to match your local environment:
+
+    -   **Database Connection:**
+        ```
+        DB_CONNECTION=mysql
+        DB_HOST=127.0.0.1
+        DB_PORT=3306
+        DB_DATABASE=db_sekolah
+        DB_USERNAME=root
+        DB_PASSWORD=
+        ```
+    -   **Mail Configuration (use your Mailtrap credentials):**
+        ```
+        MAIL_MAILER=smtp
+        MAIL_HOST=sandbox.smtp.mailtrap.io
+        MAIL_PORT=2525
+        MAIL_USERNAME=...
+        MAIL_PASSWORD=...
+        MAIL_ENCRYPTION=tls
+        MAIL_FROM_ADDRESS="no-reply@sman5bandung.test"
+        ```
+
+7.  **Run the database migrations:**
+    This command will create all the necessary tables in your database.
+    ```bash
+    php artisan migrate
+    ```
+
+## Running the Application
+
+You need to run **two servers simultaneously** in two separate terminals.
+
+1.  **Terminal 1 - Laravel Backend Server:**
+
+    ```bash
+    php artisan serve
+    ```
+
+2.  **Terminal 2 - Vite Frontend Server:**
+
+    ```bash
+    npm run dev
+    ```
+
+3.  Open your browser and visit `http://127.0.0.1:8000`.
+
+## Database Seeding
+
+To populate the database with sample data (for news and activities), use the command below. This command will drop all tables, re-migrate the database schema, and run all seeders.
+
+```bash
+php artisan migrate:fresh --seed
+```
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This project is licensed under the [MIT License](LICENSE.md).
