@@ -13,13 +13,26 @@ class KegiatanSeeder extends Seeder
      */
     public function run(): void
     {
+        Kegiatan::truncate();
         Kegiatan::create([
-            'judul' => 'Latihan OSK',
-            'image' => 'kegiatan-latihan-osk.png'
+            'judul' => 'Prosesi Wisuda Saat Covid-19',
+            'image' => 'kegiatan-wisuda.jpg'
         ]);
         Kegiatan::create([
             'judul' => 'Kegiatan Porak',
             'image' => 'kegiatan-porak.JPG'
+        ]);
+        Kegiatan::create([
+            'judul' => 'Studi Lapangan ke Museum Geologi',
+            'image' => 'kegiatan-geologi.jpg'
+        ]);
+        Kegiatan::create([
+            'judul' => 'Kegiatan Kelas Hybrid saat Covid-19',
+            'image' => 'kegiatan-kelas.jpg'
+        ]);
+        Kegiatan::create([
+            'judul' => 'Latihan OSK',
+            'image' => 'kegiatan-latihan-osk.png'
         ]);
         Kegiatan::create([
             'judul' => 'Psikotes Kelas 10',

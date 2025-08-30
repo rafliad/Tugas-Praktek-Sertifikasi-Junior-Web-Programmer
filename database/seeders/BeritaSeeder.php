@@ -13,6 +13,7 @@ class BeritaSeeder extends Seeder
      */
     public function run(): void
     {
+        Berita::truncate();
         Berita::create([
             'judul' => 'SMAN 5 Bandung Juara 1 Lomba Cerdas Cermat Nasional',
             'tanggal' => '2025-08-25',
@@ -29,6 +30,17 @@ class BeritaSeeder extends Seeder
             'judul' => 'Pendaftaran Peserta Didik Baru (PPDB) Telah Dibuka',
             'tanggal' => '2025-08-19',
             'ringkasan' => 'SMAN 5 Bandung secara resmi membuka Pendaftaran Peserta Didik Baru (PPDB) untuk tahun ajaran yang akan datang. Pendaftaran dibuka secara online...'
+        ]);
+        Berita::create([
+            'judul' => 'Siswa SMAN 5 Raih Medali Emas di Olimpiade Sains Provinsi',
+            'tanggal' => '2025-08-15',
+            'ringkasan' => 'Kabar membanggakan datang dari siswa kami, Budi Santoso, yang berhasil membawa pulang medali emas dalam ajang Olimpiade Sains tingkat provinsi Jawa Barat.'
+        ]);
+
+        Berita::create([
+            'judul' => 'Renovasi Perpustakaan Sekolah Telah Selesai',
+            'tanggal' => '2025-08-10',
+            'ringkasan' => 'Perpustakaan SMAN 5 Bandung kini tampil dengan wajah baru yang lebih modern dan nyaman untuk mendukung kegiatan literasi siswa.'
         ]);
     }
 }
