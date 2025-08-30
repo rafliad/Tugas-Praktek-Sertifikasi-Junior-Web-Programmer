@@ -8,7 +8,7 @@ export default function MainLayout({ children, title }) {
             >
                 <link rel="icon" type="image/png" href="/favicon.png" />
             </Head>
-            <header className="bg-white dark:bg-gray-800 shadow-md">
+            <header className="bg-white dark:bg-gray-800 shadow-md sticky top-0 z-50 w-full">
                 <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
                     <Link href="/" className="flex items-center space-x-3">
                         <img

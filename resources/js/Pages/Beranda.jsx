@@ -12,13 +12,16 @@ import { Button } from "@/Components/ui/Button";
 export default function Beranda({ beritaTerbaru, kegiatanTerbaru }) {
     return (
         <>
-            {/* Bagian Hero/Sambutan Utama */}
-            <div className="bg-white dark:bg-gray-800 py-20 text-center">
-                <div className="container mx-auto px-6">
-                    <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            <section
+                className="relative h-[60vh] flex items-center justify-center text-center bg-cover bg-center"
+                style={{ backgroundImage: "url('/images/sekolah.jpg')" }}
+            >
+                <div className="absolute inset-0 bg-black/50"></div>
+                <div className="relative z-10 container mx-auto px-6">
+                    <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
                         Selamat Datang di Website SMAN 5 Bandung
                     </h1>
-                    <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-8">
+                    <p className="text-lg md:text-xl text-gray-200 mb-8">
                         Pusat Informasi dan Kegiatan Terkini dari Sekolah Kami.
                     </p>
                     <Button asChild size="lg">
@@ -27,7 +30,7 @@ export default function Beranda({ beritaTerbaru, kegiatanTerbaru }) {
                         </Link>
                     </Button>
                 </div>
-            </div>
+            </section>
 
             <div className="container mx-auto py-12 px-6 space-y-12">
                 {/* Bagian Berita Terbaru */}
