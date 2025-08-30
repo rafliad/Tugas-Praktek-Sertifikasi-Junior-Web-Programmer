@@ -33,7 +33,10 @@ export default function AdminLayout({ children }) {
                         <LayoutDashboard size={20} />
                         <span>Dashboard</span>
                     </NavLink>
-                    <NavLink href="#" active={url.startsWith("/admin/berita")}>
+                    <NavLink
+                        href={route("admin.berita.index")}
+                        active={url.startsWith("/admin/berita")}
+                    >
                         <Newspaper size={20} />
                         <span>Kelola Berita</span>
                     </NavLink>

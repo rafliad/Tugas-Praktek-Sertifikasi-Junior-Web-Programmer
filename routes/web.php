@@ -10,6 +10,8 @@ use App\Http\Controllers\KontakController;
 use App\Http\Controllers\KegiatanController;
 use App\Http\Controllers\TentangKamiController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\BeritaController as AdminBeritaController;
+
 
 
 Route::get('/', [BerandaController::class, 'index'])->name('home');
@@ -26,6 +28,7 @@ Route::get('/dashboard', function () {
 
 Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    Route::get('/berita', [AdminBeritaController::class, 'index'])->name('berita.index');
 });
 
 Route::middleware('auth')->group(function () {
