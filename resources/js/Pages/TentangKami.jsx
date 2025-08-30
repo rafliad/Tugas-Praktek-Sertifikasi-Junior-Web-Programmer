@@ -138,7 +138,7 @@ export default function TentangKami() {
                         <h2 className="text-2xl font-semibold border-b-2 border-blue-500 pb-2 mb-4">
                             Visi
                         </h2>
-                        <blockquote class="text-xl italic font-semibold text-gray-900 dark:text-white">
+                        <blockquote className="text-xl italic font-semibold text-gray-900 dark:text-white">
                             <p>
                                 Sekolah Unggul yang Berdaya Saing Tinggi,
                                 Berpijak pada Agama, Budaya, dan Iptek, serta
