@@ -9,6 +9,9 @@ use App\Http\Controllers\BeritaController;
 use App\Http\Controllers\KontakController;
 use App\Http\Controllers\KegiatanController;
 use App\Http\Controllers\TentangKamiController;
+use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\BeritaController as AdminBeritaController;
+
 
 
 Route::get('/', [BerandaController::class, 'index'])->name('home');
@@ -20,8 +23,18 @@ Route::get('/kegiatan', [KegiatanController::class, 'index'])->name('kegiatan');
 Route::get('/tentang-kami', [TentangKamiController::class, 'index'])->name('tentang-kami');
 
 Route::get('/dashboard', function () {
-    return Inertia::render('Dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+    return redirect()->route('admin.dashboard');
+})->name('dashboard');
+
+Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    Route::get('/berita', [AdminBeritaController::class, 'index'])->name('berita.index');
+    Route::get('/berita/create', [AdminBeritaController::class, 'create'])->name('berita.create');
+    Route::post('/berita', [AdminBeritaController::class, 'store'])->name('berita.store');
+    Route::get('/berita/{berita}/edit', [AdminBeritaController::class, 'edit'])->name('berita.edit');
+    Route::put('/berita/{berita}', [AdminBeritaController::class, 'update'])->name('berita.update');
+    Route::delete('/berita/{berita}', [AdminBeritaController::class, 'destroy'])->name('berita.destroy');
+});
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
