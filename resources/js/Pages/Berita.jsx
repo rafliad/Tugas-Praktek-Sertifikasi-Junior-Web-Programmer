@@ -1,37 +1,95 @@
 import { Link } from "@inertiajs/react";
 import MainLayout from "@/Layouts/MainLayout";
-import { Card } from "@/Components/ui/card";
+import {
+    Card,
+    CardContent,
+    CardFooter,
+    CardHeader,
+    CardTitle,
+} from "@/Components/ui/Card";
+import { Button } from "@/Components/ui/Button";
+
+const PaginationLink = ({ active, label, url }) => {
+    if (!url) {
+        return (
+            <span
+                className="px-4 py-2 border rounded-md"
+                dangerouslySetInnerHTML={{ __html: label }}
+            />
+        );
+    }
+
+    return (
+        <Link
+            href={url}
+            className={`px-4 py-2 border rounded-md ${
+                active
+                    ? "bg-blue-600 text-white border-blue-600"
+                    : "bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700"
+            }`}
+            dangerouslySetInnerHTML={{ __html: label }}
+        />
+    );
+};
 
 export default function Berita({ daftarBerita }) {
     return (
-        <>
-            <div className="container mx-auto py-12 px-6">
-                <h1 className="text-4xl font-bold text-center mb-8">
-                    Daftar Berita Terbaru
-                </h1>
+        <div className="container mx-auto py-12 px-6">
+            <h1 className="text-4xl font-bold text-center mb-10">
+                Berita & Informasi
+            </h1>
 
-                <div className="space-y-6">
-                    {daftarBerita.map((item) => (
-                        <Card
-                            key={item.id}
-                            className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6"
-                        >
-                            <Link href={`/berita/${item.id}`}>
-                                <h2 className="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:underline">
-                                    {item.judul}
-                                </h2>
-                            </Link>
-                            <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
-                                Dipublikasikan pada: {item.tanggal}
+            {/* Layout Grid untuk daftar berita */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {daftarBerita.data.map((item) => (
+                    <Card key={item.id} className="flex flex-col">
+                        <CardHeader>
+                            <CardTitle className="line-clamp-2 h-14">
+                                {item.judul}
+                            </CardTitle>
+                        </CardHeader>
+                        <CardContent className="flex-grow">
+                            <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">
+                                {new Date(item.tanggal).toLocaleDateString(
+                                    "id-ID",
+                                    {
+                                        day: "numeric",
+                                        month: "long",
+                                        year: "numeric",
+                                    }
+                                )}
                             </p>
-                            <p className="mt-4 text-gray-700 dark:text-gray-300">
+                            <p className="line-clamp-4 text-gray-600 dark:text-gray-400">
                                 {item.ringkasan}
                             </p>
-                        </Card>
-                    ))}
-                </div>
+                        </CardContent>
+                        <CardFooter>
+                            <Button
+                                asChild
+                                variant="secondary"
+                                className="w-full"
+                            >
+                                <Link href={route("berita.show", item)}>
+                                    Baca Selengkapnya
+                                </Link>
+                            </Button>
+                        </CardFooter>
+                    </Card>
+                ))}
             </div>
-        </>
+
+            {/* Navigasi Paginasi */}
+            <div className="mt-12 flex justify-center items-center space-x-2">
+                {daftarBerita.links.map((link, index) => (
+                    <PaginationLink
+                        key={index}
+                        active={link.active}
+                        label={link.label}
+                        url={link.url}
+                    />
+                ))}
+            </div>
+        </div>
     );
 }
 
