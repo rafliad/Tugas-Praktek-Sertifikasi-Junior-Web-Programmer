@@ -11,16 +11,22 @@ class BeritaController extends Controller
 {
     public function index()
     {
-        $berita = Berita::latest('tanggal')->get();
         return Inertia::render('Berita', [
-            'daftarBerita' => $berita
+            'daftarBerita' => Berita::latest('tanggal')->paginate(6)
         ]);
     }
 
     public function show(Berita $berita)
     {
+        // Ambil 4 berita lain yang bukan berita saat ini
+        $beritaLainnya = Berita::where('id', '!=', $berita->id)
+            ->latest('tanggal')
+            ->take(4)
+            ->get();
+
         return Inertia::render('BeritaDetail', [
-            'berita' => $berita
+            'berita' => $berita,
+            'beritaLainnya' => $beritaLainnya // Kirim data baru sebagai prop
         ]);
     }
 }
