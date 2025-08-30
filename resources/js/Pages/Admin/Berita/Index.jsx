@@ -41,7 +41,9 @@ export default function Index({ berita }) {
                     <div className="flex justify-between items-center">
                         <CardTitle>Daftar Berita</CardTitle>
                         <Button asChild>
-                            <Link href="#">Tambah Berita Baru</Link>
+                            <Link href={route("admin.berita.create")}>
+                                Tambah Berita Baru
+                            </Link>
                         </Button>
                     </div>
                 </CardHeader>

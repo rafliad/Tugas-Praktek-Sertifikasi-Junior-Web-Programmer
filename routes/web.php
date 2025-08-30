@@ -29,6 +29,8 @@ Route::get('/dashboard', function () {
 Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
     Route::get('/berita', [AdminBeritaController::class, 'index'])->name('berita.index');
+    Route::get('/berita/create', [AdminBeritaController::class, 'create'])->name('berita.create');
+    Route::post('/berita', [AdminBeritaController::class, 'store'])->name('berita.store');
 });
 
 Route::middleware('auth')->group(function () {
