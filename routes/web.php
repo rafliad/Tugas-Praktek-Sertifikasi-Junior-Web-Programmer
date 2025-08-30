@@ -9,6 +9,7 @@ use App\Http\Controllers\BeritaController;
 use App\Http\Controllers\KontakController;
 use App\Http\Controllers\KegiatanController;
 use App\Http\Controllers\TentangKamiController;
+use App\Http\Controllers\Admin\DashboardController;
 
 
 Route::get('/', [BerandaController::class, 'index'])->name('home');
@@ -20,8 +21,12 @@ Route::get('/kegiatan', [KegiatanController::class, 'index'])->name('kegiatan');
 Route::get('/tentang-kami', [TentangKamiController::class, 'index'])->name('tentang-kami');
 
 Route::get('/dashboard', function () {
-    return Inertia::render('Dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+    return redirect()->route('admin.dashboard');
+})->name('dashboard');
+
+Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+});
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
