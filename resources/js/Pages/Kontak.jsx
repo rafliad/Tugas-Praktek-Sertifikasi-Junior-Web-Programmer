@@ -1,10 +1,6 @@
-// resources/js/Pages/Kontak.jsx
-
-import { Head } from "@inertiajs/react";
 import MainLayout from "@/Layouts/MainLayout";
 import { useForm } from "@inertiajs/react";
 
-// 1. Import semua komponen Shadcn yang akan kita gunakan
 import { Button } from "@/Components/ui/Button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/Components/ui/Card";
 import { Input } from "@/Components/ui/Input";

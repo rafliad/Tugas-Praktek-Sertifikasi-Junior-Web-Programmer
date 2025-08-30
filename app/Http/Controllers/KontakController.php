@@ -17,7 +17,6 @@ class KontakController extends Controller
         return Inertia::render('Kontak');
     }
 
-    // Method untuk memproses data dari formulir
     public function store(StoreKontakRequest $request)
     {
         Mail::to('admin@sman5bandung.test')->send(new PesanKontakBaru($request->validated()));

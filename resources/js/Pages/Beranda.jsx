@@ -1,4 +1,4 @@
-import { Head, Link } from "@inertiajs/react";
+import { Link } from "@inertiajs/react";
 import MainLayout from "@/Layouts/MainLayout";
 import {
     Card,
