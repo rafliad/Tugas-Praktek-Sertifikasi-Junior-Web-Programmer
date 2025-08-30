@@ -1,6 +1,4 @@
-// resources/js/Pages/BeritaDetail.jsx
-
-import { Head, Link } from "@inertiajs/react";
+import { Link } from "@inertiajs/react";
 import MainLayout from "@/Layouts/MainLayout";
 import { Card, CardContent, CardHeader, CardTitle } from "@/Components/ui/Card";
 
@@ -27,7 +25,6 @@ export default function BeritaDetail({ berita, beritaLainnya }) {
                         <p className="text-lg leading-relaxed">
                             {berita.ringkasan}
                         </p>
-                        {/* Di aplikasi nyata, ini bisa diganti dengan kolom 'konten_lengkap' */}
                     </article>
                     <div className="mt-8 border-t pt-4">
                         <Link

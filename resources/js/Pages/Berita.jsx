@@ -1,6 +1,4 @@
-// resources/js/Pages/Berita.jsx
-
-import { Head, Link } from "@inertiajs/react";
+import { Link } from "@inertiajs/react";
 import MainLayout from "@/Layouts/MainLayout";
 import {
     Card,
@@ -11,9 +9,7 @@ import {
 } from "@/Components/ui/Card";
 import { Button } from "@/Components/ui/Button";
 
-// Komponen helper untuk link paginasi
 const PaginationLink = ({ active, label, url }) => {
-    // Jika tidak ada URL (misal: untuk "...") maka jangan render apa-apa
     if (!url) {
         return (
             <span

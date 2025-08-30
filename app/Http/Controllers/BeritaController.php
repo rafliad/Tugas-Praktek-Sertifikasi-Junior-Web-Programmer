@@ -18,7 +18,6 @@ class BeritaController extends Controller
 
     public function show(Berita $berita)
     {
-        // Ambil 4 berita lain yang bukan berita saat ini
         $beritaLainnya = Berita::where('id', '!=', $berita->id)
             ->latest('tanggal')
             ->take(4)
@@ -26,7 +25,7 @@ class BeritaController extends Controller
 
         return Inertia::render('BeritaDetail', [
             'berita' => $berita,
-            'beritaLainnya' => $beritaLainnya // Kirim data baru sebagai prop
+            'beritaLainnya' => $beritaLainnya
         ]);
     }
 }
