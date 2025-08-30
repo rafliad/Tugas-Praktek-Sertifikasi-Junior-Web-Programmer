@@ -33,6 +33,7 @@ Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
     Route::post('/berita', [AdminBeritaController::class, 'store'])->name('berita.store');
     Route::get('/berita/{berita}/edit', [AdminBeritaController::class, 'edit'])->name('berita.edit');
     Route::put('/berita/{berita}', [AdminBeritaController::class, 'update'])->name('berita.update');
+    Route::delete('/berita/{berita}', [AdminBeritaController::class, 'destroy'])->name('berita.destroy');
 });
 
 Route::middleware('auth')->group(function () {

@@ -61,4 +61,13 @@ class BeritaController extends Controller
 
         return Redirect::route('admin.berita.index')->with('success', 'Berita berhasil diperbarui.');
     }
+    public function destroy(Berita $berita)
+    {
+        if ($berita->image) {
+            Storage::delete('public/images/berita/' . $berita->image);
+        }
+        $berita->delete();
+
+        return Redirect::back()->with('success', 'Berita berhasil dihapus.');
+    }
 }

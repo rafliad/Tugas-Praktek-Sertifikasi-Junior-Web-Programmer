@@ -80,14 +80,35 @@ export default function Index({ berita }) {
                                             asChild
                                             className="mr-2"
                                         >
-                                            <Link href="#">Edit</Link>
+                                            <Link
+                                                href={route(
+                                                    "admin.berita.edit",
+                                                    item.id
+                                                )}
+                                            >
+                                                Edit
+                                            </Link>
                                         </Button>
                                         <Button
                                             variant="destructive"
                                             size="sm"
                                             asChild
                                         >
-                                            <Link href="#">Hapus</Link>
+                                            <Link
+                                                href={route(
+                                                    "admin.berita.destroy",
+                                                    item.id
+                                                )}
+                                                method="delete"
+                                                as="button"
+                                                onBefore={() =>
+                                                    confirm(
+                                                        "Apakah Anda yakin ingin menghapus berita ini?"
+                                                    )
+                                                }
+                                            >
+                                                Hapus
+                                            </Link>
                                         </Button>
                                     </TableCell>
                                 </TableRow>

@@ -1,4 +1,4 @@
-import { Link, usePage } from "@inertiajs/react";
+import { Link, usePage, Head } from "@inertiajs/react";
 import { LayoutDashboard, Newspaper, LogOut } from "lucide-react";
 
 const NavLink = ({ href, active, children }) => (
@@ -45,6 +45,9 @@ export default function AdminLayout({ children }) {
 
             {/* Main Content */}
             <div className="flex-1 flex flex-col">
+                <Head>
+                    <link rel="icon" type="image/png" href="/favicon.png" />
+                </Head>
                 <header className="bg-white dark:bg-gray-800 shadow-md p-4 flex justify-end items-center">
                     <div className="flex items-center space-x-3">
                         <span>{user.name}</span>
